@@ -1,4 +1,8 @@
 :root {
+  --font-mono:
+    Dank Mono, Operator Mono, Inconsolata, Fira Mono, ui-monospace, SF
+    Mono,Monaco, Droid Sans Mono, Source Code Pro, Cascadia Code,Menlo,
+    Consolas, DejaVu Sans Mono, monospace;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -15,9 +19,10 @@
 }
 
 body {
+  align-content: start;
   margin: 0;
-  display: flex;
-  place-items: center;
+  display: grid;
+  justify-items: center;
   min-width: 320px;
   min-height: 100vh;
 }

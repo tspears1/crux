@@ -1,0 +1,819 @@
+{
+  "version": "4",
+  "specifiers": {
+    "npm:@deno/vite-plugin@1": "1.0.2_vite@6.0.3",
+    "npm:@types/node@*": "22.5.4",
+    "npm:lit@^3.2.1": "3.2.1",
+    "npm:shiki@^1.22.2": "1.24.2",
+    "npm:vite@*": "6.0.3",
+    "npm:vite@^6.0.3": "6.0.3"
+  },
+  "npm": {
+    "@deno/vite-plugin@1.0.2_vite@6.0.3": {
+      "integrity": "sha512-ZaC5W1yCb1xdRURU5qHFHrxZABr1tC68tS73/YhXUUbe9nuytCV4CG/dpLxMkxS64Fs3YwcqEz2k1eAqE9W5SQ==",
+      "dependencies": [
+        "vite"
+      ]
+    },
+    "@esbuild/aix-ppc64@0.24.0": {
+      "integrity": "sha512-WtKdFM7ls47zkKHFVzMz8opM7LkcsIp9amDUBIAWirg70RM71WRSjdILPsY5Uv1D42ZpUfaPILDlfactHgsRkw=="
+    },
+    "@esbuild/android-arm64@0.24.0": {
+      "integrity": "sha512-Vsm497xFM7tTIPYK9bNTYJyF/lsP590Qc1WxJdlB6ljCbdZKU9SY8i7+Iin4kyhV/KV5J2rOKsBQbB77Ab7L/w=="
+    },
+    "@esbuild/android-arm@0.24.0": {
+      "integrity": "sha512-arAtTPo76fJ/ICkXWetLCc9EwEHKaeya4vMrReVlEIUCAUncH7M4bhMQ+M9Vf+FFOZJdTNMXNBrWwW+OXWpSew=="
+    },
+    "@esbuild/android-x64@0.24.0": {
+      "integrity": "sha512-t8GrvnFkiIY7pa7mMgJd7p8p8qqYIz1NYiAoKc75Zyv73L3DZW++oYMSHPRarcotTKuSs6m3hTOa5CKHaS02TQ=="
+    },
+    "@esbuild/darwin-arm64@0.24.0": {
+      "integrity": "sha512-CKyDpRbK1hXwv79soeTJNHb5EiG6ct3efd/FTPdzOWdbZZfGhpbcqIpiD0+vwmpu0wTIL97ZRPZu8vUt46nBSw=="
+    },
+    "@esbuild/darwin-x64@0.24.0": {
+      "integrity": "sha512-rgtz6flkVkh58od4PwTRqxbKH9cOjaXCMZgWD905JOzjFKW+7EiUObfd/Kav+A6Gyud6WZk9w+xu6QLytdi2OA=="
+    },
+    "@esbuild/freebsd-arm64@0.24.0": {
+      "integrity": "sha512-6Mtdq5nHggwfDNLAHkPlyLBpE5L6hwsuXZX8XNmHno9JuL2+bg2BX5tRkwjyfn6sKbxZTq68suOjgWqCicvPXA=="
+    },
+    "@esbuild/freebsd-x64@0.24.0": {
+      "integrity": "sha512-D3H+xh3/zphoX8ck4S2RxKR6gHlHDXXzOf6f/9dbFt/NRBDIE33+cVa49Kil4WUjxMGW0ZIYBYtaGCa2+OsQwQ=="
+    },
+    "@esbuild/linux-arm64@0.24.0": {
+      "integrity": "sha512-TDijPXTOeE3eaMkRYpcy3LarIg13dS9wWHRdwYRnzlwlA370rNdZqbcp0WTyyV/k2zSxfko52+C7jU5F9Tfj1g=="
+    },
+    "@esbuild/linux-arm@0.24.0": {
+      "integrity": "sha512-gJKIi2IjRo5G6Glxb8d3DzYXlxdEj2NlkixPsqePSZMhLudqPhtZ4BUrpIuTjJYXxvF9njql+vRjB2oaC9XpBw=="
+    },
+    "@esbuild/linux-ia32@0.24.0": {
+      "integrity": "sha512-K40ip1LAcA0byL05TbCQ4yJ4swvnbzHscRmUilrmP9Am7//0UjPreh4lpYzvThT2Quw66MhjG//20mrufm40mA=="
+    },
+    "@esbuild/linux-loong64@0.24.0": {
+      "integrity": "sha512-0mswrYP/9ai+CU0BzBfPMZ8RVm3RGAN/lmOMgW4aFUSOQBjA31UP8Mr6DDhWSuMwj7jaWOT0p0WoZ6jeHhrD7g=="
+    },
+    "@esbuild/linux-mips64el@0.24.0": {
+      "integrity": "sha512-hIKvXm0/3w/5+RDtCJeXqMZGkI2s4oMUGj3/jM0QzhgIASWrGO5/RlzAzm5nNh/awHE0A19h/CvHQe6FaBNrRA=="
+    },
+    "@esbuild/linux-ppc64@0.24.0": {
+      "integrity": "sha512-HcZh5BNq0aC52UoocJxaKORfFODWXZxtBaaZNuN3PUX3MoDsChsZqopzi5UupRhPHSEHotoiptqikjN/B77mYQ=="
+    },
+    "@esbuild/linux-riscv64@0.24.0": {
+      "integrity": "sha512-bEh7dMn/h3QxeR2KTy1DUszQjUrIHPZKyO6aN1X4BCnhfYhuQqedHaa5MxSQA/06j3GpiIlFGSsy1c7Gf9padw=="
+    },
+    "@esbuild/linux-s390x@0.24.0": {
+      "integrity": "sha512-ZcQ6+qRkw1UcZGPyrCiHHkmBaj9SiCD8Oqd556HldP+QlpUIe2Wgn3ehQGVoPOvZvtHm8HPx+bH20c9pvbkX3g=="
+    },
+    "@esbuild/linux-x64@0.24.0": {
+      "integrity": "sha512-vbutsFqQ+foy3wSSbmjBXXIJ6PL3scghJoM8zCL142cGaZKAdCZHyf+Bpu/MmX9zT9Q0zFBVKb36Ma5Fzfa8xA=="
+    },
+    "@esbuild/netbsd-x64@0.24.0": {
+      "integrity": "sha512-hjQ0R/ulkO8fCYFsG0FZoH+pWgTTDreqpqY7UnQntnaKv95uP5iW3+dChxnx7C3trQQU40S+OgWhUVwCjVFLvg=="
+    },
+    "@esbuild/openbsd-arm64@0.24.0": {
+      "integrity": "sha512-MD9uzzkPQbYehwcN583yx3Tu5M8EIoTD+tUgKF982WYL9Pf5rKy9ltgD0eUgs8pvKnmizxjXZyLt0z6DC3rRXg=="
+    },
+    "@esbuild/openbsd-x64@0.24.0": {
+      "integrity": "sha512-4ir0aY1NGUhIC1hdoCzr1+5b43mw99uNwVzhIq1OY3QcEwPDO3B7WNXBzaKY5Nsf1+N11i1eOfFcq+D/gOS15Q=="
+    },
+    "@esbuild/sunos-x64@0.24.0": {
+      "integrity": "sha512-jVzdzsbM5xrotH+W5f1s+JtUy1UWgjU0Cf4wMvffTB8m6wP5/kx0KiaLHlbJO+dMgtxKV8RQ/JvtlFcdZ1zCPA=="
+    },
+    "@esbuild/win32-arm64@0.24.0": {
+      "integrity": "sha512-iKc8GAslzRpBytO2/aN3d2yb2z8XTVfNV0PjGlCxKo5SgWmNXx82I/Q3aG1tFfS+A2igVCY97TJ8tnYwpUWLCA=="
+    },
+    "@esbuild/win32-ia32@0.24.0": {
+      "integrity": "sha512-vQW36KZolfIudCcTnaTpmLQ24Ha1RjygBo39/aLkM2kmjkWmZGEJ5Gn9l5/7tzXA42QGIoWbICfg6KLLkIw6yw=="
+    },
+    "@esbuild/win32-x64@0.24.0": {
+      "integrity": "sha512-7IAFPrjSQIJrGsK6flwg7NFmwBoSTyF3rl7If0hNUFQU4ilTsEPL6GuMuU9BfIWVVGuRnuIidkSMC+c0Otu8IA=="
+    },
+    "@lit-labs/ssr-dom-shim@1.2.1": {
+      "integrity": "sha512-wx4aBmgeGvFmOKucFKY+8VFJSYZxs9poN3SDNQFF6lT6NrQUnHiPB2PWz2sc4ieEcAaYYzN+1uWahEeTq2aRIQ=="
+    },
+    "@lit/reactive-element@2.0.4": {
+      "integrity": "sha512-GFn91inaUa2oHLak8awSIigYz0cU0Payr1rcFsrkf5OJ5eSPxElyZfKh0f2p9FsTiZWXQdWGJeXZICEfXXYSXQ==",
+      "dependencies": [
+        "@lit-labs/ssr-dom-shim"
+      ]
+    },
+    "@rollup/rollup-android-arm-eabi@4.28.1": {
+      "integrity": "sha512-2aZp8AES04KI2dy3Ss6/MDjXbwBzj+i0GqKtWXgw2/Ma6E4jJvujryO6gJAghIRVz7Vwr9Gtl/8na3nDUKpraQ=="
+    },
+    "@rollup/rollup-android-arm64@4.28.1": {
+      "integrity": "sha512-EbkK285O+1YMrg57xVA+Dp0tDBRB93/BZKph9XhMjezf6F4TpYjaUSuPt5J0fZXlSag0LmZAsTmdGGqPp4pQFA=="
+    },
+    "@rollup/rollup-darwin-arm64@4.28.1": {
+      "integrity": "sha512-prduvrMKU6NzMq6nxzQw445zXgaDBbMQvmKSJaxpaZ5R1QDM8w+eGxo6Y/jhT/cLoCvnZI42oEqf9KQNYz1fqQ=="
+    },
+    "@rollup/rollup-darwin-x64@4.28.1": {
+      "integrity": "sha512-WsvbOunsUk0wccO/TV4o7IKgloJ942hVFK1CLatwv6TJspcCZb9umQkPdvB7FihmdxgaKR5JyxDjWpCOp4uZlQ=="
+    },
+    "@rollup/rollup-freebsd-arm64@4.28.1": {
+      "integrity": "sha512-HTDPdY1caUcU4qK23FeeGxCdJF64cKkqajU0iBnTVxS8F7H/7BewvYoG+va1KPSL63kQ1PGNyiwKOfReavzvNA=="
+    },
+    "@rollup/rollup-freebsd-x64@4.28.1": {
+      "integrity": "sha512-m/uYasxkUevcFTeRSM9TeLyPe2QDuqtjkeoTpP9SW0XxUWfcYrGDMkO/m2tTw+4NMAF9P2fU3Mw4ahNvo7QmsQ=="
+    },
+    "@rollup/rollup-linux-arm-gnueabihf@4.28.1": {
+      "integrity": "sha512-QAg11ZIt6mcmzpNE6JZBpKfJaKkqTm1A9+y9O+frdZJEuhQxiugM05gnCWiANHj4RmbgeVJpTdmKRmH/a+0QbA=="
+    },
+    "@rollup/rollup-linux-arm-musleabihf@4.28.1": {
+      "integrity": "sha512-dRP9PEBfolq1dmMcFqbEPSd9VlRuVWEGSmbxVEfiq2cs2jlZAl0YNxFzAQS2OrQmsLBLAATDMb3Z6MFv5vOcXg=="
+    },
+    "@rollup/rollup-linux-arm64-gnu@4.28.1": {
+      "integrity": "sha512-uGr8khxO+CKT4XU8ZUH1TTEUtlktK6Kgtv0+6bIFSeiSlnGJHG1tSFSjm41uQ9sAO/5ULx9mWOz70jYLyv1QkA=="
+    },
+    "@rollup/rollup-linux-arm64-musl@4.28.1": {
+      "integrity": "sha512-QF54q8MYGAqMLrX2t7tNpi01nvq5RI59UBNx+3+37zoKX5KViPo/gk2QLhsuqok05sSCRluj0D00LzCwBikb0A=="
+    },
+    "@rollup/rollup-linux-loongarch64-gnu@4.28.1": {
+      "integrity": "sha512-vPul4uodvWvLhRco2w0GcyZcdyBfpfDRgNKU+p35AWEbJ/HPs1tOUrkSueVbBS0RQHAf/A+nNtDpvw95PeVKOA=="
+    },
+    "@rollup/rollup-linux-powerpc64le-gnu@4.28.1": {
+      "integrity": "sha512-pTnTdBuC2+pt1Rmm2SV7JWRqzhYpEILML4PKODqLz+C7Ou2apEV52h19CR7es+u04KlqplggmN9sqZlekg3R1A=="
+    },
+    "@rollup/rollup-linux-riscv64-gnu@4.28.1": {
+      "integrity": "sha512-vWXy1Nfg7TPBSuAncfInmAI/WZDd5vOklyLJDdIRKABcZWojNDY0NJwruY2AcnCLnRJKSaBgf/GiJfauu8cQZA=="
+    },
+    "@rollup/rollup-linux-s390x-gnu@4.28.1": {
+      "integrity": "sha512-/yqC2Y53oZjb0yz8PVuGOQQNOTwxcizudunl/tFs1aLvObTclTwZ0JhXF2XcPT/zuaymemCDSuuUPXJJyqeDOg=="
+    },
+    "@rollup/rollup-linux-x64-gnu@4.28.1": {
+      "integrity": "sha512-fzgeABz7rrAlKYB0y2kSEiURrI0691CSL0+KXwKwhxvj92VULEDQLpBYLHpF49MSiPG4sq5CK3qHMnb9tlCjBw=="
+    },
+    "@rollup/rollup-linux-x64-musl@4.28.1": {
+      "integrity": "sha512-xQTDVzSGiMlSshpJCtudbWyRfLaNiVPXt1WgdWTwWz9n0U12cI2ZVtWe/Jgwyv/6wjL7b66uu61Vg0POWVfz4g=="
+    },
+    "@rollup/rollup-win32-arm64-msvc@4.28.1": {
+      "integrity": "sha512-wSXmDRVupJstFP7elGMgv+2HqXelQhuNf+IS4V+nUpNVi/GUiBgDmfwD0UGN3pcAnWsgKG3I52wMOBnk1VHr/A=="
+    },
+    "@rollup/rollup-win32-ia32-msvc@4.28.1": {
+      "integrity": "sha512-ZkyTJ/9vkgrE/Rk9vhMXhf8l9D+eAhbAVbsGsXKy2ohmJaWg0LPQLnIxRdRp/bKyr8tXuPlXhIoGlEB5XpJnGA=="
+    },
+    "@rollup/rollup-win32-x64-msvc@4.28.1": {
+      "integrity": "sha512-ZvK2jBafvttJjoIdKm/Q/Bh7IJ1Ose9IBOwpOXcOvW3ikGTQGmKDgxTC6oCAzW6PynbkKP8+um1du81XJHZ0JA=="
+    },
+    "@shikijs/core@1.24.2": {
+      "integrity": "sha512-BpbNUSKIwbKrRRA+BQj0BEWSw+8kOPKDJevWeSE/xIqGX7K0xrCZQ9kK0nnEQyrzsUoka1l81ZtJ2mGaCA32HQ==",
+      "dependencies": [
+        "@shikijs/engine-javascript",
+        "@shikijs/engine-oniguruma",
+        "@shikijs/types",
+        "@shikijs/vscode-textmate",
+        "@types/hast",
+        "hast-util-to-html"
+      ]
+    },
+    "@shikijs/engine-javascript@1.24.2": {
+      "integrity": "sha512-EqsmYBJdLEwEiO4H+oExz34a5GhhnVp+jH9Q/XjPjmBPc6TE/x4/gD0X3i0EbkKKNqXYHHJTJUpOLRQNkEzS9Q==",
+      "dependencies": [
+        "@shikijs/types",
+        "@shikijs/vscode-textmate",
+        "oniguruma-to-es"
+      ]
+    },
+    "@shikijs/engine-oniguruma@1.24.2": {
+      "integrity": "sha512-ZN6k//aDNWRJs1uKB12pturKHh7GejKugowOFGAuG7TxDRLod1Bd5JhpOikOiFqPmKjKEPtEA6mRCf7q3ulDyQ==",
+      "dependencies": [
+        "@shikijs/types",
+        "@shikijs/vscode-textmate"
+      ]
+    },
+    "@shikijs/types@1.24.2": {
+      "integrity": "sha512-bdeWZiDtajGLG9BudI0AHet0b6e7FbR0EsE4jpGaI0YwHm/XJunI9+3uZnzFtX65gsyJ6ngCIWUfA4NWRPnBkQ==",
+      "dependencies": [
+        "@shikijs/vscode-textmate",
+        "@types/hast"
+      ]
+    },
+    "@shikijs/vscode-textmate@9.3.1": {
+      "integrity": "sha512-79QfK1393x9Ho60QFyLti+QfdJzRQCVLFb97kOIV7Eo9vQU/roINgk7m24uv0a7AUvN//RDH36FLjjK48v0s9g=="
+    },
+    "@types/estree@1.0.6": {
+      "integrity": "sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw=="
+    },
+    "@types/hast@3.0.4": {
+      "integrity": "sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==",
+      "dependencies": [
+        "@types/unist"
+      ]
+    },
+    "@types/mdast@4.0.4": {
+      "integrity": "sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==",
+      "dependencies": [
+        "@types/unist"
+      ]
+    },
+    "@types/node@22.5.4": {
+      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
+    "@types/trusted-types@2.0.7": {
+      "integrity": "sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw=="
+    },
+    "@types/unist@3.0.3": {
+      "integrity": "sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q=="
+    },
+    "@ungap/structured-clone@1.2.1": {
+      "integrity": "sha512-fEzPV3hSkSMltkw152tJKNARhOupqbH96MZWyRjNaYZOMIzbrTeQDG+MTc6Mr2pgzFQzFxAfmhGDNP5QK++2ZA=="
+    },
+    "ccount@2.0.1": {
+      "integrity": "sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg=="
+    },
+    "character-entities-html4@2.1.0": {
+      "integrity": "sha512-1v7fgQRj6hnSwFpq1Eu0ynr/CDEw0rXo2B61qXrLNdHZmPKgb7fqS1a2JwF0rISo9q77jDI8VMEHoApn8qDoZA=="
+    },
+    "character-entities-legacy@3.0.0": {
+      "integrity": "sha512-RpPp0asT/6ufRm//AJVwpViZbGM/MkjQFxJccQRHmISF/22NBtsHqAWmL+/pmkPWoIUJdWyeVleTl1wydHATVQ=="
+    },
+    "comma-separated-tokens@2.0.3": {
+      "integrity": "sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg=="
+    },
+    "dequal@2.0.3": {
+      "integrity": "sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA=="
+    },
+    "devlop@1.1.0": {
+      "integrity": "sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==",
+      "dependencies": [
+        "dequal"
+      ]
+    },
+    "emoji-regex-xs@1.0.0": {
+      "integrity": "sha512-LRlerrMYoIDrT6jgpeZ2YYl/L8EulRTt5hQcYjy5AInh7HWXKimpqx68aknBFpGL2+/IcogTcaydJEgaTmOpDg=="
+    },
+    "esbuild@0.24.0": {
+      "integrity": "sha512-FuLPevChGDshgSicjisSooU0cemp/sGXR841D5LHMB7mTVOmsEHcAxaH3irL53+8YDIeVNQEySh4DaYU/iuPqQ==",
+      "dependencies": [
+        "@esbuild/aix-ppc64",
+        "@esbuild/android-arm",
+        "@esbuild/android-arm64",
+        "@esbuild/android-x64",
+        "@esbuild/darwin-arm64",
+        "@esbuild/darwin-x64",
+        "@esbuild/freebsd-arm64",
+        "@esbuild/freebsd-x64",
+        "@esbuild/linux-arm",
+        "@esbuild/linux-arm64",
+        "@esbuild/linux-ia32",
+        "@esbuild/linux-loong64",
+        "@esbuild/linux-mips64el",
+        "@esbuild/linux-ppc64",
+        "@esbuild/linux-riscv64",
+        "@esbuild/linux-s390x",
+        "@esbuild/linux-x64",
+        "@esbuild/netbsd-x64",
+        "@esbuild/openbsd-arm64",
+        "@esbuild/openbsd-x64",
+        "@esbuild/sunos-x64",
+        "@esbuild/win32-arm64",
+        "@esbuild/win32-ia32",
+        "@esbuild/win32-x64"
+      ]
+    },
+    "fsevents@2.3.3": {
+      "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw=="
+    },
+    "hast-util-to-html@9.0.4": {
+      "integrity": "sha512-wxQzXtdbhiwGAUKrnQJXlOPmHnEehzphwkK7aluUPQ+lEc1xefC8pblMgpp2w5ldBTEfveRIrADcrhGIWrlTDA==",
+      "dependencies": [
+        "@types/hast",
+        "@types/unist",
+        "ccount",
+        "comma-separated-tokens",
+        "hast-util-whitespace",
+        "html-void-elements",
+        "mdast-util-to-hast",
+        "property-information",
+        "space-separated-tokens",
+        "stringify-entities",
+        "zwitch"
+      ]
+    },
+    "hast-util-whitespace@3.0.0": {
+      "integrity": "sha512-88JUN06ipLwsnv+dVn+OIYOvAuvBMy/Qoi6O7mQHxdPXpjy+Cd6xRkWwux7DKO+4sYILtLBRIKgsdpS2gQc7qw==",
+      "dependencies": [
+        "@types/hast"
+      ]
+    },
+    "html-void-elements@3.0.0": {
+      "integrity": "sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg=="
+    },
+    "lit-element@4.1.1": {
+      "integrity": "sha512-HO9Tkkh34QkTeUmEdNYhMT8hzLid7YlMlATSi1q4q17HE5d9mrrEHJ/o8O2D0cMi182zK1F3v7x0PWFjrhXFew==",
+      "dependencies": [
+        "@lit-labs/ssr-dom-shim",
+        "@lit/reactive-element",
+        "lit-html"
+      ]
+    },
+    "lit-html@3.2.1": {
+      "integrity": "sha512-qI/3lziaPMSKsrwlxH/xMgikhQ0EGOX2ICU73Bi/YHFvz2j/yMCIrw4+puF2IpQ4+upd3EWbvnHM9+PnJn48YA==",
+      "dependencies": [
+        "@types/trusted-types"
+      ]
+    },
+    "lit@3.2.1": {
+      "integrity": "sha512-1BBa1E/z0O9ye5fZprPtdqnc0BFzxIxTTOO/tQFmyC/hj1O3jL4TfmLBw0WEwjAokdLwpclkvGgDJwTIh0/22w==",
+      "dependencies": [
+        "@lit/reactive-element",
+        "lit-element",
+        "lit-html"
+      ]
+    },
+    "mdast-util-to-hast@13.2.0": {
+      "integrity": "sha512-QGYKEuUsYT9ykKBCMOEDLsU5JRObWQusAolFMeko/tYPufNkRffBAQjIE+99jbA87xv6FgmjLtwjh9wBWajwAA==",
+      "dependencies": [
+        "@types/hast",
+        "@types/mdast",
+        "@ungap/structured-clone",
+        "devlop",
+        "micromark-util-sanitize-uri",
+        "trim-lines",
+        "unist-util-position",
+        "unist-util-visit",
+        "vfile"
+      ]
+    },
+    "micromark-util-character@2.1.1": {
+      "integrity": "sha512-wv8tdUTJ3thSFFFJKtpYKOYiGP2+v96Hvk4Tu8KpCAsTMs6yi+nVmGh1syvSCsaxz45J6Jbw+9DD6g97+NV67Q==",
+      "dependencies": [
+        "micromark-util-symbol",
+        "micromark-util-types"
+      ]
+    },
+    "micromark-util-encode@2.0.1": {
+      "integrity": "sha512-c3cVx2y4KqUnwopcO9b/SCdo2O67LwJJ/UyqGfbigahfegL9myoEFoDYZgkT7f36T0bLrM9hZTAaAyH+PCAXjw=="
+    },
+    "micromark-util-sanitize-uri@2.0.1": {
+      "integrity": "sha512-9N9IomZ/YuGGZZmQec1MbgxtlgougxTodVwDzzEouPKo3qFWvymFHWcnDi2vzV1ff6kas9ucW+o3yzJK9YB1AQ==",
+      "dependencies": [
+        "micromark-util-character",
+        "micromark-util-encode",
+        "micromark-util-symbol"
+      ]
+    },
+    "micromark-util-symbol@2.0.1": {
+      "integrity": "sha512-vs5t8Apaud9N28kgCrRUdEed4UJ+wWNvicHLPxCa9ENlYuAY31M0ETy5y1vA33YoNPDFTghEbnh6efaE8h4x0Q=="
+    },
+    "micromark-util-types@2.0.1": {
+      "integrity": "sha512-534m2WhVTddrcKVepwmVEVnUAmtrx9bfIjNoQHRqfnvdaHQiFytEhJoTgpWJvDEXCO5gLTQh3wYC1PgOJA4NSQ=="
+    },
+    "nanoid@3.3.8": {
+      "integrity": "sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w=="
+    },
+    "oniguruma-to-es@0.7.0": {
+      "integrity": "sha512-HRaRh09cE0gRS3+wi2zxekB+I5L8C/gN60S+vb11eADHUaB/q4u8wGGOX3GvwvitG8ixaeycZfeoyruKQzUgNg==",
+      "dependencies": [
+        "emoji-regex-xs",
+        "regex",
+        "regex-recursion"
+      ]
+    },
+    "picocolors@1.1.1": {
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="
+    },
+    "postcss@8.4.49": {
+      "integrity": "sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==",
+      "dependencies": [
+        "nanoid",
+        "picocolors",
+        "source-map-js"
+      ]
+    },
+    "property-information@6.5.0": {
+      "integrity": "sha512-PgTgs/BlvHxOu8QuEN7wi5A0OmXaBcHpmCSTehcs6Uuu9IkDIEo13Hy7n898RHfrQ49vKCoGeWZSaAK01nwVig=="
+    },
+    "regex-recursion@4.3.0": {
+      "integrity": "sha512-5LcLnizwjcQ2ALfOj95MjcatxyqF5RPySx9yT+PaXu3Gox2vyAtLDjHB8NTJLtMGkvyau6nI3CfpwFCjPUIs/A==",
+      "dependencies": [
+        "regex-utilities"
+      ]
+    },
+    "regex-utilities@2.3.0": {
+      "integrity": "sha512-8VhliFJAWRaUiVvREIiW2NXXTmHs4vMNnSzuJVhscgmGav3g9VDxLrQndI3dZZVVdp0ZO/5v0xmX516/7M9cng=="
+    },
+    "regex@5.0.2": {
+      "integrity": "sha512-/pczGbKIQgfTMRV0XjABvc5RzLqQmwqxLHdQao2RTXPk+pmTXB2P0IaUHYdYyk412YLwUIkaeMd5T+RzVgTqnQ==",
+      "dependencies": [
+        "regex-utilities"
+      ]
+    },
+    "rollup@4.28.1": {
+      "integrity": "sha512-61fXYl/qNVinKmGSTHAZ6Yy8I3YIJC/r2m9feHo6SwVAVcLT5MPwOUFe7EuURA/4m0NR8lXG4BBXuo/IZEsjMg==",
+      "dependencies": [
+        "@rollup/rollup-android-arm-eabi",
+        "@rollup/rollup-android-arm64",
+        "@rollup/rollup-darwin-arm64",
+        "@rollup/rollup-darwin-x64",
+        "@rollup/rollup-freebsd-arm64",
+        "@rollup/rollup-freebsd-x64",
+        "@rollup/rollup-linux-arm-gnueabihf",
+        "@rollup/rollup-linux-arm-musleabihf",
+        "@rollup/rollup-linux-arm64-gnu",
+        "@rollup/rollup-linux-arm64-musl",
+        "@rollup/rollup-linux-loongarch64-gnu",
+        "@rollup/rollup-linux-powerpc64le-gnu",
+        "@rollup/rollup-linux-riscv64-gnu",
+        "@rollup/rollup-linux-s390x-gnu",
+        "@rollup/rollup-linux-x64-gnu",
+        "@rollup/rollup-linux-x64-musl",
+        "@rollup/rollup-win32-arm64-msvc",
+        "@rollup/rollup-win32-ia32-msvc",
+        "@rollup/rollup-win32-x64-msvc",
+        "@types/estree",
+        "fsevents"
+      ]
+    },
+    "shiki@1.24.2": {
+      "integrity": "sha512-TR1fi6mkRrzW+SKT5G6uKuc32Dj2EEa7Kj0k8kGqiBINb+C1TiflVOiT9ta6GqOJtC4fraxO5SLUaKBcSY38Fg==",
+      "dependencies": [
+        "@shikijs/core",
+        "@shikijs/engine-javascript",
+        "@shikijs/engine-oniguruma",
+        "@shikijs/types",
+        "@shikijs/vscode-textmate",
+        "@types/hast"
+      ]
+    },
+    "source-map-js@1.2.1": {
+      "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
+    },
+    "space-separated-tokens@2.0.2": {
+      "integrity": "sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q=="
+    },
+    "stringify-entities@4.0.4": {
+      "integrity": "sha512-IwfBptatlO+QCJUo19AqvrPNqlVMpW9YEL2LIVY+Rpv2qsjCGxaDLNRgeGsQWJhfItebuJhsGSLjaBbNSQ+ieg==",
+      "dependencies": [
+        "character-entities-html4",
+        "character-entities-legacy"
+      ]
+    },
+    "trim-lines@3.0.1": {
+      "integrity": "sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg=="
+    },
+    "undici-types@6.19.8": {
+      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
+    },
+    "unist-util-is@6.0.0": {
+      "integrity": "sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw==",
+      "dependencies": [
+        "@types/unist"
+      ]
+    },
+    "unist-util-position@5.0.0": {
+      "integrity": "sha512-fucsC7HjXvkB5R3kTCO7kUjRdrS0BJt3M/FPxmHMBOm8JQi2BsHAHFsy27E0EolP8rp0NzXsJ+jNPyDWvOJZPA==",
+      "dependencies": [
+        "@types/unist"
+      ]
+    },
+    "unist-util-stringify-position@4.0.0": {
+      "integrity": "sha512-0ASV06AAoKCDkS2+xw5RXJywruurpbC4JZSm7nr7MOt1ojAzvyyaO+UxZf18j8FCF6kmzCZKcAgN/yu2gm2XgQ==",
+      "dependencies": [
+        "@types/unist"
+      ]
+    },
+    "unist-util-visit-parents@6.0.1": {
+      "integrity": "sha512-L/PqWzfTP9lzzEa6CKs0k2nARxTdZduw3zyh8d2NVBnsyvHjSX4TWse388YrrQKbvI8w20fGjGlhgT96WwKykw==",
+      "dependencies": [
+        "@types/unist",
+        "unist-util-is"
+      ]
+    },
+    "unist-util-visit@5.0.0": {
+      "integrity": "sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==",
+      "dependencies": [
+        "@types/unist",
+        "unist-util-is",
+        "unist-util-visit-parents"
+      ]
+    },
+    "vfile-message@4.0.2": {
+      "integrity": "sha512-jRDZ1IMLttGj41KcZvlrYAaI3CfqpLpfpf+Mfig13viT6NKvRzWZ+lXz0Y5D60w6uJIBAOGq9mSHf0gktF0duw==",
+      "dependencies": [
+        "@types/unist",
+        "unist-util-stringify-position"
+      ]
+    },
+    "vfile@6.0.3": {
+      "integrity": "sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==",
+      "dependencies": [
+        "@types/unist",
+        "vfile-message"
+      ]
+    },
+    "vite@6.0.3": {
+      "integrity": "sha512-Cmuo5P0ENTN6HxLSo6IHsjCLn/81Vgrp81oaiFFMRa8gGDj5xEjIcEpf2ZymZtZR8oU0P2JX5WuUp/rlXcHkAw==",
+      "dependencies": [
+        "esbuild",
+        "fsevents",
+        "postcss",
+        "rollup"
+      ]
+    },
+    "zwitch@2.0.4": {
+      "integrity": "sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A=="
+    }
+  },
+  "remote": {
+    "https://cdn.jsdelivr.net/npm/@shikijs/core@1.24.2/+esm": "62e195ecfa327ddf352a81d78a938c62e1f1bf249d43d3b5c5b1edaa9def7e7a",
+    "https://cdn.jsdelivr.net/npm/@shikijs/engine-javascript@1.24.2/+esm": "5f2d6035c437c6e4a2590047c5f0690fb2ecfc3b088f72996881eaae34073bf1",
+    "https://cdn.jsdelivr.net/npm/@shikijs/engine-oniguruma@1.24.2/+esm": "2ccea9e0c8c24370125c6cdb0a6dfaeacee313b13064c7195e798bfc1542242b",
+    "https://cdn.jsdelivr.net/npm/@shikijs/types@1.24.2/+esm": "59f551a7e01800a88e60c2ce44d7de9234bfdf34010e7b7bf102b78afa5a05a2",
+    "https://cdn.jsdelivr.net/npm/@shikijs/vscode-textmate@9.3.0/+esm": "a6b657c402f07ec6fd7e5cd6914aaef361d86fe10916e1fd6deda9b4e80181ec",
+    "https://cdn.jsdelivr.net/npm/ccount@2.0.1/+esm": "493e7a47cefc47922853c30ddf17d01d0a5d4f1e0c44adf6bc3a550b1b8b3189",
+    "https://cdn.jsdelivr.net/npm/character-entities-html4@2.1.0/+esm": "df2d0a0c280edcb386251cd0757396bc27132f3a5c56302e8bc32c51d9103b0d",
+    "https://cdn.jsdelivr.net/npm/character-entities-legacy@3.0.0/+esm": "ea7dbb9ec68dab644eda5cafb1cb70b157dd2647f187885ab059b12b1e1a9533",
+    "https://cdn.jsdelivr.net/npm/comma-separated-tokens@2.0.3/+esm": "7aeacf878f4348fb4ba3c5ac001beb8bb8e9a8657fa9647e15b76df6d161fd19",
+    "https://cdn.jsdelivr.net/npm/hast-util-to-html@9.0.3/+esm": "cae16c160480893f347a2fe2c577349884e3c3826ec54c95ddefdc4f14681752",
+    "https://cdn.jsdelivr.net/npm/hast-util-whitespace@3.0.0/+esm": "1fff4ba8efb35f715de4744bf3c9d2631536599928ca460dedff79133dcd4155",
+    "https://cdn.jsdelivr.net/npm/html-void-elements@3.0.0/+esm": "022fcc78d8edb26cd5b051c3a5cdaf33ec94bf4aac4a1f1eea826bfee4bba17c",
+    "https://cdn.jsdelivr.net/npm/oniguruma-to-es@0.7.0/+esm": "391587e842c5926a1f9d1fa19dec0bdc14cf7387d0abf43b133878cfb454049a",
+    "https://cdn.jsdelivr.net/npm/property-information@6.5.0/+esm": "5db0d1e2460c1d334231739f806579efeaba82e854fed2c23366eb3cf4129bd4",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/+esm": "ae59cb940a2ea766bc02b612885c0fef27166f3a8b3b6dc289d45e247a7ab598",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/abap.mjs/+esm": "874c8345602b3014534380b655c041d70394d8da05a097092f817bab2a538661",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/actionscript-3.mjs/+esm": "bf536247a498d5c1e771831977243765adce82856b668501f5401c970e475514",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/ada.mjs/+esm": "fa2ab5ae8a7a3726925c6e972f68449f8d0e2f494b0595be7be97297cf0bdcfb",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/angular-html.mjs/+esm": "cadd80437e76e172a82d03ef517a48ed019bd65734531396f1d2178ff2d6e542",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/angular-ts.mjs/+esm": "eb495356a8c50cd64365a690860ad2bca0d7951bd069885bdc394b66d0f6917d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/apache.mjs/+esm": "50f174604d4385c6df16c2b3a521c69fc7f47b5875d67a2b1bd1dff1e85213e6",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/apex.mjs/+esm": "c24eaaa5eed23faa6a37cd287fbd3b28b3ac24b7d1423d8bfef6d085beb961bf",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/apl.mjs/+esm": "1bb72150b4ffd56b124fd1a4fc922f6d3965aa910ec75ccf298ae8d52a44d273",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/applescript.mjs/+esm": "4d8093a412a4d8437725987abb99dcd39dae9884f4408edd6e2d13b841d977f6",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/ara.mjs/+esm": "436f734ed678aa00a85b3c62a2a9eb085e5a18db56821d90bb8f25479ae99b99",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/asciidoc.mjs/+esm": "9dab948f09fa405be795f7d6a55806caa1c15cd77ce37ef039df5ce154acf9b9",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/asm.mjs/+esm": "c6d83be4e6b3856d5275a3940f99c5baa45afe1b968f5fb667fb0a8a15192bef",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/astro.mjs/+esm": "a6258b68c91b93fa33e9793ac961b0b7d3f537567668404c1d4ae909ff05adbe",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/awk.mjs/+esm": "f3c985b871924b1dbf483f28d2dcd43717b7e884f332951808089cf570f59140",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/ballerina.mjs/+esm": "1ac77cd237a3761671bf8da6ccf68beb4185fcd37a07e03cef19f7261c9d11c0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/bat.mjs/+esm": "f90e0132f5fc954b24bb696c8b265a69f43f533231c4691f0246eb6892a58e02",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/beancount.mjs/+esm": "a31eb485d7158ff4f3f3a3927983078b733fce8a661b579b730a61fde2b9e98f",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/berry.mjs/+esm": "225863bad21d2fc7af751a574f0787ae02dd06853e87e041005c704838cfa996",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/bibtex.mjs/+esm": "68e9c4fead7c7c018c75bee89bcd49d39db5a208959558c7773c678038d1acb1",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/bicep.mjs/+esm": "d185530235a886ebfffce17cc39c4b2713cee45fa3c5bd987ce2fbdb93d26153",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/blade.mjs/+esm": "4011820b71d84b320ebe37694fb019140e4d55cae383efb67ebef029b0aabef3",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/bsl.mjs/+esm": "48e683851b1516c79ddb18b11e985b6f6771399d33ac83a47fb5432967ad96ca",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/c.mjs/+esm": "bbc9afff6bc40c31aee7dd49ac93ded8732ad7eb3afcf7c04f442dd29e55ce24",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/cadence.mjs/+esm": "d814bfa75b4ecfa2d6616220660ef1faa8b651acdb22f9d644a18ccc92b3809c",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/cairo.mjs/+esm": "8ea8dbf8c6a58e6b5e02c6681675a01c327d796339f2ab01802066d8353adc09",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/clarity.mjs/+esm": "1a997f6243813ca91801ea03c5fb49e0acbdb2724b268054eac66aef0473514e",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/clojure.mjs/+esm": "ebda8cf347ed6cbb253077695fdf54bd619245acf192c378a9abbb7fdd34515f",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/cmake.mjs/+esm": "77ec9a448f86f1b100aad7bfaeacc8c76e134ab77373f1dc0f5aaca4320ddd10",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/cobol.mjs/+esm": "f72c54f3636621d890e3914f66c29a96ca46275d43628886a808755851ff135e",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/codeowners.mjs/+esm": "8b8c6e39524072a838ad37fbb7bb745e6a05399b1b1bfa1fcafb61b7dcbd6592",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/codeql.mjs/+esm": "b2058a98559d1a694c2207949c6d9608e227a3036910f07357e6cdd253bc9a70",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/coffee.mjs/+esm": "e35e561e50c70553ea263748137d8933cb4f84e9ea4e43c0d8ef749ef09ed5ce",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/common-lisp.mjs/+esm": "c36d1595fd9ed437062c6939e3f88d0463eb2a30585da0c4db56bbe43f8ca4f0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/coq.mjs/+esm": "3c9ae89624ee8ee418104c48199e616ff9576d1d6d18c091206d7070e259d08d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/cpp.mjs/+esm": "438f949e22a046334fc53274f9fc8d3c8246fd029217235c4724b83237ceffe0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/crystal.mjs/+esm": "29186491e6332dd2b28037c963251de9a9300b16a8043c8ccf7240b17d245008",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/csharp.mjs/+esm": "ce8b78bf627ba0ae205299ac594880d012b5f47144fec7ecd7f3e4c0bfc924a7",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/css.mjs/+esm": "8669908c6a3b028805156af96f0c4b3dc8b1cbfad8d0dda65256747ca779cfdb",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/csv.mjs/+esm": "f8dd6852be81994e96bc5745464762e37d874c1d485adfbf68cf522a92398caa",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/cue.mjs/+esm": "fca3393bb682d7a53c9dde9797444b8dfe56bc80b9c5708e691c0d49dca87a1d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/cypher.mjs/+esm": "ccd8f267f45f63ac55e2b0d557f7538c42986005f16c14b652f3888c7ba2b371",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/d.mjs/+esm": "ee0018e462d0fe7bc32af36ff253b07f52152a8c045cd4e29b87dcfb3baa5197",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/dart.mjs/+esm": "6a6239624b44d17ef425e980901d450e3947b8149c249e1877dcaf6826f74a32",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/dax.mjs/+esm": "e3eee3a585cb28badbcea151bd1d1f44124f198e9217409118ebab9784c19267",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/desktop.mjs/+esm": "d6a0afd0a6914654619a03ff6e0a385cd9e76f6f25933a109917e169a1f25934",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/diff.mjs/+esm": "abedfc6b53c7cb1536b3ed07a0dc15cc623bb740fc58c4dcc75e40625934a433",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/docker.mjs/+esm": "3e12845aad52ad04fddf422aa952e32718acddf656df3d80938276ec57b0adfb",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/dotenv.mjs/+esm": "557617a57dd3d60655efabe048418b993568e5a801631a7d10479ffa89cae2fd",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/dream-maker.mjs/+esm": "83c7c880fd648261f8be314da0bd6077083b37f5945b0fd9b05ca3b4900a0ae7",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/edge.mjs/+esm": "b991add30b2566092b9ada82866f5a170a250bdbd713c67ec51d26880665bdb0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/elixir.mjs/+esm": "0de4784d999a8e7a4ad4c39a9676c95fd5b231ca21d5a09d2683bfbe7ec1bb7d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/elm.mjs/+esm": "b9b09482a78a0e6be4e7cc1c7710a304d8cd75ddcfc09a51f5dcd5942d98bb27",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/emacs-lisp.mjs/+esm": "9b82ffbcf3407218ffff08d77e2cbb8c7492fcaab75a12268aa7ce6a7c20471b",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/erb.mjs/+esm": "c91e0bdd9c1ca0991db1780e780c832152233ccbce9239eaa3da64921cddb382",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/erlang.mjs/+esm": "0f73c8f9a11aadfdb5557c4802250be83f9576b26f3860603884ab74d439d2b7",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/fennel.mjs/+esm": "197cc4cd738d1561a7f9ba2835e77264e0f8c743a6a76af0e70c4f81354a5e09",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/fish.mjs/+esm": "f82dbdf15a7732e62a76f6e49be46f7b7ecd5fe960793136c934ce3ba9ba4c50",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/fluent.mjs/+esm": "4daa96b9b9ebf768531dd73ae9fd145f19ae68bb11d13d3ecdeaad236c94964d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/fortran-fixed-form.mjs/+esm": "3cf7056d28a60b87e364d41e407eb5fcd36e99015834a500dd05fedab96ae759",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/fortran-free-form.mjs/+esm": "6ea842aee67bfee23300b7eda2dea51867a58641ba602b3d1e65bd3c9f7722ee",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/fsharp.mjs/+esm": "2ea0808affa9dc1d5cbe9ef46b36ab0f008c361d9e06eea9e1abe3c2e285443c",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/gdresource.mjs/+esm": "2ce93738f1520eaf7cf38c40114d3b8d9a46c901e5389db5f7459f764d212a94",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/gdscript.mjs/+esm": "8eee7af31180c51a1c891e11c6f62999149f3b14546a090d1af9f1093179e721",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/gdshader.mjs/+esm": "096d50342e0217e98891b6e257d9cd8942a75507cb5437d1346d69bf23231d32",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/genie.mjs/+esm": "2c6ca36fa3b2b797d0d1a1787aed26fbd74fe4ce76cace4bed10c926f2372004",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/gherkin.mjs/+esm": "70920611267a85a5568e35d4dab39be166baa8161d85161de56869a54ef39b2d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/git-commit.mjs/+esm": "b5ccf1b2dc0c712420ba799fcb56ef6891c0777f14790cf110298c37b29dcf18",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/git-rebase.mjs/+esm": "9ffc48103f08f37f4bff853f87afaaf6a991dc7a1e477e6d686d9906ef50db21",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/gleam.mjs/+esm": "ed5baa6b8350f1627833fc90ff7de06cffcd944be6416cf22ee7a730ec14173c",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/glimmer-js.mjs/+esm": "153735d788d9bf68013de3e0cdadc7ab447dbdd6ceaef1f6e0bad537c22a1849",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/glimmer-ts.mjs/+esm": "576f6b60da7e8cfac2459873b299ad544f7c1af112255ae9b9f2b986395531ba",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/glsl.mjs/+esm": "088c395ca364eb198849652983595c623785b2248da81b25a46a8577afe83e39",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/gnuplot.mjs/+esm": "1af828f15ed76a50bf206a6fe0c3182cba2babed8a5b185e2c267de5c8f0eb37",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/go.mjs/+esm": "8fcf046b79c93fde754c1d0fca327d2cbf68d135462da0a91bffc5024cec797b",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/graphql.mjs/+esm": "389ccf113287db4792c4211d8308a119a9e69988b22642d29c7b5f3f15d3b0ae",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/groovy.mjs/+esm": "c25136bb84c7d38a4541681f601e562e9db4a7d1780d1f548d78c45ec60b9c76",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/hack.mjs/+esm": "1758fcfe0466988893d9a625b0e5d20f8c97fbb6c5a9ea626fe983430d27e48f",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/haml.mjs/+esm": "aa2019e902005a474f424f8f7564a5eab130d326bf349c5486c0844fd06d2f55",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/handlebars.mjs/+esm": "0d6f07922eea7a076679f218e3d88e6173ce223c24254614c617ac59e4e64b9c",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/haskell.mjs/+esm": "3f07400fa6c00e3a53c24d01fe41692aab7f69bb6a03c1332fc36d3646cefff7",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/haxe.mjs/+esm": "42b4996b5ec11656b51967dea59e7015e871142555f6d339cf75a4a0b3b405c9",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/hcl.mjs/+esm": "0fbf497e8ab685ceaf17ab6515ef8746134d21a7d6911ed51f656fc58e450de9",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/hjson.mjs/+esm": "986be6a256a555ef21d2773ef71c6a423531ceb57fa25778f11d6d4250e4bccf",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/hlsl.mjs/+esm": "2db23129a8f46f69b541d76e045a4ec7b9d348d24082a87aa101f9a64fbf8d67",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/html-derivative.mjs/+esm": "d10d02269590efb0c5417b7e321c57a08107a891bbded122700caa3231a7c021",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/html.mjs/+esm": "4e3192df19c400ec1c8c05be72fcf6b220cc08bf7ff401667c398fa682962cbe",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/http.mjs/+esm": "18ff1379f5fdcc4249add9ed6fe8421619b556dee9aad25543b1ceb8738b864d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/hxml.mjs/+esm": "9ea9a8620cd4930915ab42d352e0601fda98beacbca9e8189beeca9c17201810",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/hy.mjs/+esm": "86b05a82f0e50f47be975acf2771241628f330e88e1a2d6feb8c95719716c38c",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/imba.mjs/+esm": "cee9e07101422bb2c6e8191ae3b5b7f5d647541f3473bc2b7049f4c4a30ae245",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/ini.mjs/+esm": "e939d5c3c805bb6eaffb5e820dddf1332ae2fb2bfda271ba8068938dabdbc9f0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/java.mjs/+esm": "2d706dd246de762027685f214af882f12c2deea374a89b839c294c8dbe034a7b",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/javascript.mjs/+esm": "e76c3d7c2ab9f0a5abbab978d452cdda307286540f5d003dcdf6748a455b3317",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/jinja.mjs/+esm": "2cbb54057333ff18235513c6968d04b7b73cf79bec3f7722d411a287b493e9f2",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/jison.mjs/+esm": "f6cf154d0783cd054af1da0d79fbb8954b50b2d7ce2b38d8a569bcb4daaaf534",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/json.mjs/+esm": "d1aa7a9c4645da3c26c81c74157836edd5f857abd22a615e99835cf860475bcd",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/json5.mjs/+esm": "7245893d9c0f72daa57fbba33d6ab2b24faa13a21a54e3da42187c6ee893502e",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/jsonc.mjs/+esm": "95181c626b69317089dd3641e3eafe26e52493f50ef2237936fe9b212b10273a",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/jsonl.mjs/+esm": "4d76efc7363c3aaebb28bae505d3dae82e7112fb0b1f0619029075ee98dacdd2",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/jsonnet.mjs/+esm": "64f994f05114c3d67f7e5bafebbe71632500a7d0f3ecc6df573f7ebb4cc17fce",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/jssm.mjs/+esm": "83d15bff9b34cf7f56ac61c0a7234e2cb62ea9a8c7007e61f2ec2b69ca9b4ca9",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/jsx.mjs/+esm": "586ae75f821704fb6616cd77b1673813f3d9b9e437a5c6ef6444a11e74a9c97d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/julia.mjs/+esm": "a976807654407d421ea95574cc3f903af91ebea6f66bdb899a5779e2f7b6b331",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/kotlin.mjs/+esm": "78a916b44e51322581b2d8530fd7a01369a8e37460c3cad849f40bcddb102987",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/kusto.mjs/+esm": "684718e4887bfdb4088b51092483af372d1c4df3f217b1b2d4dd76a6dbaccad6",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/latex.mjs/+esm": "05dd5960f8e2e45f36a7689d8d06a2efe6aae812f293339c66103a05bb93af67",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/lean.mjs/+esm": "8dd7e3adbef21f592d68f26f453dfeffeb75cb8e44fb8179cc0c38fe1265853b",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/less.mjs/+esm": "79b346ec1b6cfbbe5960e16a072ff3072d13737f4c5058535e08c404a38fc512",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/liquid.mjs/+esm": "dff1ee0695be3048f3f4412f22ce86994ccb8e0dbb1d081737f5c0e0708df1c6",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/log.mjs/+esm": "14662f31b2d3abe01ff6eb5845a4bc0528e7828509ba390dd806e913f3dc1d53",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/logo.mjs/+esm": "fcb5f25d4bc9c134aaea9fbb4b0cdb20c721bf4190672aae20645b89a747c8de",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/lua.mjs/+esm": "48d44f941ebfe401d02ef5416f49b4ee852e499a51a01bcff9c6ea1e72e4b08f",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/luau.mjs/+esm": "03544dd200e8eeffa7127cf77e1796f2e74d6f82a6f5853e9c27494c93fac6ad",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/make.mjs/+esm": "e872f286d6965b7ac7d6cb77cc973703b254731b5bff45053c65965e2bfb226e",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/markdown.mjs/+esm": "56f0f0ef94c19e8161ca7684414118c2927bf8780ca21adea7c7887f06976694",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/marko.mjs/+esm": "40aa1a78b3cff02cbff0779888964159cfdd1ce75bbee1116b6cbc72b57a7c14",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/matlab.mjs/+esm": "9c9061558317f30c83f3aeb1eb2b1f8c7ad53e701c09827d32ca5649665f29e3",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/mdc.mjs/+esm": "4e1c35e1e60bcb8fcc4c40e498f2258ecd6f9a224859ec439609bcb61c75a539",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/mdx.mjs/+esm": "275e2fb1ab66a36a279caa11f5e59d6cfe35990b51b4428f94ca9678f2529d87",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/mermaid.mjs/+esm": "8d18f463fada71afa4d73d8966153d21925317548a489d90fb9fe95484336ad4",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/mipsasm.mjs/+esm": "2918df44a6536764ca8c13d6250c727c3465ee0a4af47b23664aff65900d0323",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/mojo.mjs/+esm": "3c775ec03cbf084634fc2bcb97b795155c05b2656d5489d26747f21c988bbdbc",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/move.mjs/+esm": "5d32509a90a1fd9817b1faa8f58acbf3159d35013f020590f1b9cf67295f2bdf",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/narrat.mjs/+esm": "26a079213ea078b00144edeca272be375460c22d531917276999814957bf7468",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/nextflow.mjs/+esm": "e988aafdfef9628bb5865f120ff8864b3b30a059f534b5904d834f8112570546",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/nginx.mjs/+esm": "657c62eebe8d400967f6e8dc4ebac1dc3c11c988dc4622df6f370732394b8497",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/nim.mjs/+esm": "4a960cf10b7a2ad6e79b41eea9290abd53445ca0aaf24a5947864bc285d9a856",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/nix.mjs/+esm": "3388cf0aa6ff6b4330a0d8928761d7351331d3e14feef72f0a0753bc59c47356",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/nushell.mjs/+esm": "019c2e3d660177a233551823f4fbd56f24d98a4fff04b0ca9fdd570706e35f02",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/objective-c.mjs/+esm": "54e2d9afb38d54fb733891eb70a522e7a218b62567cd7e17c6cae457568ae879",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/objective-cpp.mjs/+esm": "7ef942182ff83ca95c007346181e8db68f004880b9edae91e33a271a215c8b95",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/ocaml.mjs/+esm": "320a96fdb3a0a55674e14d19606ac6ff1d02427d08a0626ddf6306854fba95d1",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/pascal.mjs/+esm": "703fd8a40f68506d0873df71404e216e3753f66842553363924b83cd22caf1e0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/perl.mjs/+esm": "75322a237ccdb0ff1ab783bf2603733e334dabe38549ba043b72e81d7ceb0008",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/php.mjs/+esm": "70d1ba088405bbb6a21f277ab9a4025e2c15c60cb1baf15a9b8a964ccaf11f73",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/plsql.mjs/+esm": "ee29ebabffed42b045873a009ece5ecdcc9758d433096cdcaf3dd6fe6322f567",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/po.mjs/+esm": "e7c501f80d66b115f88440592c13b1801ffa04cc62a19d03ad373835487cb25d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/postcss.mjs/+esm": "8349b73494226b043262be3594820bf0ade099b39cbd567e0671bbd7db3f3472",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/powerquery.mjs/+esm": "ea62766ccfa6e509a087f011ea588c2a05453960fa2307587e6b5b5183f31cb2",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/powershell.mjs/+esm": "348257ccbadf0df71a41a9ccd2460b1501967db38d38ab5bcc3549749f766683",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/prisma.mjs/+esm": "0cd96eefed48ad799a5720c3942ba1ad175598a168ef955fdf1b031a4169df4d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/prolog.mjs/+esm": "42073df1f5962483423c888d7599bb27cc619bbe8f9d9089f1417076af2b04e2",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/proto.mjs/+esm": "c41137cff7398fd46580aa8d385fa224f62e554f030027bfa4b471d843428f2f",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/pug.mjs/+esm": "f4527a9ae148ef2d97794a8f2cb41f23dbbd43068e36c26820ecefed00986085",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/puppet.mjs/+esm": "cdbdf84616c6c2a85a69ca5ab5aab4fc18c38d2074c453397eb96dae9eca805a",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/purescript.mjs/+esm": "e69472504125c347cab65892c66aab53e2bf04ff6c0a6bd7e5bb81e51d6a09cd",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/python.mjs/+esm": "b41d423e8d3702383db08ad294e68f46a05b86f1594756ecbf51208c681a83ce",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/qml.mjs/+esm": "2d90c0a108f36e46b5fe50fb97fbc4029f09e91bf9c869a8729d20dfdfc3c493",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/qmldir.mjs/+esm": "cbc97036b16c969bbf8a37b46d5813ea173a689a2f3d48bbcea2f3f44b954651",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/qss.mjs/+esm": "90bf65b20f4d1a87f796b85ed1419dae15b9b08bb7b96e6fee1791ca0666f488",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/r.mjs/+esm": "6fc02fbc431b09569ee022ff294e428706796b5851048e2fb1acc73ea99975fc",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/racket.mjs/+esm": "b3e4b95b103e5096369e27e77952329403acbdbdb7a32d6c24fb2505ff47aca8",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/raku.mjs/+esm": "1d9daf893a8ed105a9b9e02192e54fb4f32d406eeda6b9786aec9a6b0a04773a",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/razor.mjs/+esm": "d1c8bad60b52689e3e3bc377a120f99b8f228575fde65b48d2205e8a91b9a779",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/reg.mjs/+esm": "7e8090d0cff9e7f1fe46ac3b7a18bb2f36b070e9940599101c90a839346698b3",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/regexp.mjs/+esm": "f6ac1b0eec873843ec32870b656698be2dd3b3614a7533ed4b8285d7ea8a4fed",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/rel.mjs/+esm": "854c4cebbaf825953312684e1d0e41083d830ea46109ce532e5a7f5562e5e833",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/riscv.mjs/+esm": "34f348dc5b5697998b14f0528601a14ca1bf2ce306c619c4391376f2f5088cb7",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/rst.mjs/+esm": "85d2486fd9273b7c6d1dc00f5c977a95cfcf595a757f13db310d606da3fc8215",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/ruby.mjs/+esm": "de21bd2c4bd2bee72b0092db39f0ad7456feda5684b84afd8c690dd910680822",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/rust.mjs/+esm": "f99dfb4b2266e0891a3feadb1f6fb4d7462f26b8e08c17712f6d96712cb9e317",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/sas.mjs/+esm": "f5068be9255748f5679a814e96d8d435b0153c59f60776f35accb58c896b5192",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/sass.mjs/+esm": "16968d005beface68500ac0dc8babce18e32f4ae62aebe9db1491b57e9b02e10",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/scala.mjs/+esm": "460caf1341662069f72ed969c1a80ab14aa9671af4c4a3f4975c20892d7c0217",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/scheme.mjs/+esm": "593cbff764854c29971077ad11aaf52963b58d75fb9a616bc6cec1f800b3f77c",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/scss.mjs/+esm": "ae0c8a0346f32fdaddff0e4392c0e8616f538b8f563af2b07cf4ef1d566c5eea",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/sdbl.mjs/+esm": "d2a64e258a751142a483b688a2e672108051ad94adc72beea58849c445855214",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/shaderlab.mjs/+esm": "e1ee12e55f92f413955886b04a8f6e24b2c222a3050c17df40f07c244ab7afab",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/shellscript.mjs/+esm": "70881321b4b47779cf0d31a87047ff99e95baf3dc24b34ab6cd602f41a2ed7e3",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/shellsession.mjs/+esm": "2f49aded7f7d48c810b2ec75b2d9faf2b8b568f52da1d2c4bcc5565676b03798",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/smalltalk.mjs/+esm": "1b8056af63d67cc5f1650c2c417fc313f0657b01c387172a275497c3b688300e",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/solidity.mjs/+esm": "0ef82780d427431d0f26c27e7336a17283ef40002a2310484b5aab02354dd3c7",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/soy.mjs/+esm": "fd82f76080c01de53516b6958048be7068562345a0b0bf789b872dbcd9635ae4",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/sparql.mjs/+esm": "595fd54851cb1219e1db145fd4cbacb9bdd9ffc3918f970feef9633f78065fb0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/splunk.mjs/+esm": "d073a78e4c9a1b18b7ebf45ec7e132f734cfd6955100370ac3ec24a4d8a42af0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/sql.mjs/+esm": "cc31e443bfce055ae7d8b57d51c4b1dc1791be2edec8e9ce8491397f6e833f67",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/ssh-config.mjs/+esm": "5cc4a6257246e8895ef6bbe9bb68356b98ee60a23c0eaa2cd2728ab66bed544b",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/stata.mjs/+esm": "7128d6da6cc20a60d08563f262b0dc199d97f14afb6a707a94d43a911565e30b",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/stylus.mjs/+esm": "caf6f68f0f1ff03f18d922069a6ef29ebb971dfec091e79290b897e6dc855cfe",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/svelte.mjs/+esm": "0b134b21d3a9443b46da4a4c2f47c841a088f2b7b7af4b21c74193d4f882387c",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/swift.mjs/+esm": "5e4e90001394d6182728dec6a65b5304da9669f2d155448c428b8d1dc92a1294",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/system-verilog.mjs/+esm": "8d6ec05f441a29ffd9c18845fce3782295f547abac649fc7623127d5891760f8",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/systemd.mjs/+esm": "a597107077408e5e772d1eb6d70aa07e8901ef41f94b94ff9c172ca1ac6dde35",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/talonscript.mjs/+esm": "2e6c3d7bb41395e6f501f9e1935dfddaeb44ea03e96557a61a026d302064f7ae",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/tasl.mjs/+esm": "3e759ba47f82d1d49e722d9af36a80e601583cf9d98edd4f3415532e4d06d690",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/tcl.mjs/+esm": "aa6fe2d82593ecba9741db00d4ceca2ab8d3a53e1977066a38d17fbe580b3154",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/templ.mjs/+esm": "ed37b8164d10f1ed0507c77cd36057520af582f45b9d9a65ad6222b4fdaf2839",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/terraform.mjs/+esm": "a7313699723546180bfa18343687a7f7e0720bbaa02018762bb5d5df2a13176c",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/tex.mjs/+esm": "b080cfb9d83c3cf724501d6967ecd16f48e220c35368d5adc65a85e346f36153",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/toml.mjs/+esm": "7171e4677874afcf00cb39b624f1705497b7ad009eafba32c4949f97186d3f02",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/ts-tags.mjs/+esm": "10ddc94fba010366cb38c1ae8302ad9676f85f438af71d9207eaaddcc8fd1dba",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/tsv.mjs/+esm": "7b96fbb0d73a426c72fc8a4c10c6d6dbb0f491a83176871dec96b872b94638df",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/tsx.mjs/+esm": "eab08f6ba9b135bdb149c3ebf2e07f84f534a20132255487dfe17790f48a27e2",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/turtle.mjs/+esm": "1facf9a41e6e3fac4644f4aa9d8e0f2cbc7b193f377ffb24529880f97bd19f74",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/twig.mjs/+esm": "f6b7637a4c88b1fbfd8e38be5ddaa28d05ed1e39d28458a63562427fb559c7de",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/typescript.mjs/+esm": "4e846df2b2e60f0ab2d402b02dab61c0c5db11888b755aff1eabb335c2597f1a",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/typespec.mjs/+esm": "7b4c98469f3025d506f7f7b6447c6abc4553e66ec45832a8443b3526b0882c70",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/typst.mjs/+esm": "ddf2c96af0a0185b49ad40f3cdd7dc9db498d81051da25aaa93fbec94952bee9",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/v.mjs/+esm": "656b4be75f1d7d17e93b9a5c69f54737bf5e945c7abdbba0e2e73f77aa0e61d5",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/vala.mjs/+esm": "536c646d19a707754a149e2ad85fb04071ce6cad1bf9804dfd6c65638afe8f22",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/vb.mjs/+esm": "d4dd675031160ea87144584f97378eb5a538d18182a54b8177074fc6e6125794",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/verilog.mjs/+esm": "b88907c21219b015d184dd217ac5414b44a0f583093dd090134b84a0120696c0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/vhdl.mjs/+esm": "b2936ad2b9a1ab974ca4e4067ba820982ebd4c913f1a4acfe68c57e2cf1171e5",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/viml.mjs/+esm": "72c503d84d954aa7015aac4cf415a920856180fe17879bda19a303a780879262",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/vue-html.mjs/+esm": "7fba453594dcb327a983b124044c76d72a9284d6c7628d377e10aa88be4411d7",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/vue.mjs/+esm": "37d2676380fa1453f8bca2f31b27a7012e7af3972a726591a14bd1578e6862f3",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/vyper.mjs/+esm": "868816e18fc0e6531f0e07ea59fd20af3ca075b5744929b56556bcead3a50ca0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/wasm.mjs/+esm": "6e254a459630f0307d44e3b656959a3155d16eb0604b515032f4cba96d50dfe3",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/wenyan.mjs/+esm": "2b6f23b4c371b8222c386f64f7580d841316313dbd2681829f979f8dcc2148ee",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/wgsl.mjs/+esm": "01fa8528dac120cccc532e51b83cf8a7e1f07f787e42ac2567af1952c740f6cf",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/wikitext.mjs/+esm": "18f80fb4e49295181b4b71837a81c6d3d3fca49f180b6381e838edeaf4fe788f",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/wolfram.mjs/+esm": "d390b7eaf86f914b3b3c29f02cf66a5d7b92edc61c6672bccb94fc5f8f7a7bf6",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/xml.mjs/+esm": "7d6edb85ce898a29d49f156b2cc640aa5c1775947a973eb7bc6f6c5ce74e6c74",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/xsl.mjs/+esm": "2a2dc61ea9dbce8e359bea6522716df1331be896f7d95f04da29efda74b871e2",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/yaml.mjs/+esm": "c6d3a4ad49ffa2a8a37fc2e116fd60ae65887b6aeeaf690083d7e4c67e3ef6d8",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/zenscript.mjs/+esm": "e35a33c9df6e298d568916860b00ed8baa83f07cd89ac9bacea7274ee368dec8",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/langs/zig.mjs/+esm": "eeacf49885f5f6f8537aa4ff0335a3f0e7c0cc70ec7b0f2487cb56c58ca46f86",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/andromeeda.mjs/+esm": "fc8e6ed99246b7c79fa52b6a8f2d35995e81155088ab1a4a9685c9a63db7a203",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/aurora-x.mjs/+esm": "30b6e48e4252db30d508c5430b700026a400454ce941c0a498642f5aac87cfaa",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/ayu-dark.mjs/+esm": "1384d34f982b1f513a351ed35e37e7c60023229c369580de19d7e272092a456b",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/catppuccin-frappe.mjs/+esm": "a9df531e4747ead81c28d46a951ff1b7105fc6dfdf3a03b5090caae735c4d667",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/catppuccin-latte.mjs/+esm": "45e08806442fe56f48c3d093e59513cd1e06ca5aef52828d31d2a3e65add76ac",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/catppuccin-macchiato.mjs/+esm": "302c42d14dd3b8ab4f5ba5dd99989d36a4f4af1d2e096d4faab3022483bac9e4",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/catppuccin-mocha.mjs/+esm": "0a253fd8fe63cb78db18d17a4ad69eb3a8b06cf4b936e8a5c8c79874ed6b867e",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/dark-plus.mjs/+esm": "84d3770b6fb1930494e4fdc91cf29fff2dd8f9a5f7aca2eb5f80c45d0dc2fe2e",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/dracula-soft.mjs/+esm": "59a41105b0461abda38a8ca7a87fa3d540e08ceec8321eb51d44d4f53a1b6e6a",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/dracula.mjs/+esm": "75e2c0bae80d966fd986493bb0ce6d92488e3d967f88eb42e0a8775f81216b96",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/everforest-dark.mjs/+esm": "b0760fac62786572aaabcca2be44d06e83d5629b0e89bcf27323720d7315c832",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/everforest-light.mjs/+esm": "3d7b0f0732d5dd57b6c6f74a7798cb43b459b8f12989497abd483c3a998834fb",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/github-dark-default.mjs/+esm": "1ec5940b465b9921fc83eebdcbb3b3fdd886bba9e5b89f5c619b367b688bca28",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/github-dark-dimmed.mjs/+esm": "54662fde526ec140dcbc06db7f6dc72eba2c5eb8d48536f186c44c2192c30fab",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/github-dark-high-contrast.mjs/+esm": "e52a336781957f7719402eb94003132ac8edf30d5167ff5bac9f2c2d83d297ad",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/github-dark.mjs/+esm": "8b6f22a674624716d48f1b5678912c8602c8b2d25ff1a2bf6e5586d3ed64517e",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/github-light-default.mjs/+esm": "084608e30dc4419f24f7dd1e21f25aef68130092cbfe2fa2e34b9695523cc24f",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/github-light-high-contrast.mjs/+esm": "8b6cf345e80134621ba1deeb6cf005bce4834c47f424f73208a6844505909dac",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/github-light.mjs/+esm": "afa879792803030628a5904549d92bb559ecee792104b8006378141a3c297b8d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/houston.mjs/+esm": "43e1262ba9a297f623dff6fbd13f5057c4e0b414b70650b22acd621518e32614",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/kanagawa-dragon.mjs/+esm": "f2e8c813addaaf02bca05b302825b76b15cc0a1e2daa891e325facd529cb2f85",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/kanagawa-lotus.mjs/+esm": "c61ed8aa89a3e7123a969bc24b23333176d865a92eb94d21674a5bc4abf26140",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/kanagawa-wave.mjs/+esm": "e14adf216002b159874e538a220d88e12be1b1415df6bc342e95217bd97f1972",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/laserwave.mjs/+esm": "618233f501fb529f3553321309c134d87b57f819b30bcc7ff8b65f1594f21297",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/light-plus.mjs/+esm": "ac1f13aaf53a2e6e90d2956bbc89d3954c64338d34680b64edd4060697b3293d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/material-theme-darker.mjs/+esm": "c3563e1a27adf9b2896568bbf52bdeaaed5273cf54e2f20e508d699ea37bf59e",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/material-theme-lighter.mjs/+esm": "5b339cf0e37fb573c8e919302a9097117599116f868248dc91a1d0c666a1d158",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/material-theme-ocean.mjs/+esm": "24cadd4653f8da0b0399d61376ed5cb9806402129b202c23d63462da80078282",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/material-theme-palenight.mjs/+esm": "ec1d86a58ea2579620fa629adf252ca040c18739465609b6be644fed10478510",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/material-theme.mjs/+esm": "bebc4bcd822cd38764a97628e9e3c2eae5331ed1e6b4322692d54481729a3b8d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/min-dark.mjs/+esm": "4fb57547f7ce6504fe750629444995f2125a8bdd167d8b8b64b040c971dfbf8f",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/min-light.mjs/+esm": "eec295e9349bd2d7a4ab595d68cb612441b70d9fa6234fe55607fdd596ba541a",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/monokai.mjs/+esm": "24517128681490d0df851665e89df779fd1b39abf7d169871799c6259f628933",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/night-owl.mjs/+esm": "7e3bcd1a9651b5ccf8bec905443e07b26bdf6d58f44eb364bca5ffd7d259fbc3",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/nord.mjs/+esm": "b309a7f601464d500d537e3396ac962413a1670b138dd6a956b6ca99d38d55ab",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/one-dark-pro.mjs/+esm": "bd713b777f2d2fa4479df06ff941ff0e7247c7a415ef2ec5958a24e9447327fa",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/one-light.mjs/+esm": "af81bbbb09c5f0ba78304a773756d2682944bd6f85cdba76d2d48dfc25211183",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/plastic.mjs/+esm": "f686d86fab7a476ab74cf7509a5fba4ab07eb517a2a8c04736ea25a74140765d",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/poimandres.mjs/+esm": "1bd69c1c2ce21e9f26b5cd8bb061595f258ab547f4298f323da0af769d8f9a39",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/red.mjs/+esm": "06e7c0efb1024cedbf8109a7e3844702075060a9786f0cd261856c5d8a66ff2e",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/rose-pine-dawn.mjs/+esm": "e55bc1b1aa8cb970ab15332ddcae6c04460a4887186ba7618ecc7593fa9cc408",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/rose-pine-moon.mjs/+esm": "9ab12d94e85aee261a2aef3e822dfece1b80401ff4c288208ea070767e0b6264",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/rose-pine.mjs/+esm": "7b622cba0ed7ad8a557de6f88f688bd2773f22d8c6eb9590444ab90a5e853c73",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/slack-dark.mjs/+esm": "fa2c687d2f58f2868d608d550ac70b024efd7c64139b2b81cbdc599fc554c3ef",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/slack-ochin.mjs/+esm": "7681c1db339c98607d1f0d3c22350fbcbf3bf1d6685563da393a64c28b047325",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/snazzy-light.mjs/+esm": "7e3044a1411d00e57beb8e7dbc4bc0b588f572c0d529e917f43623196503ad34",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/solarized-dark.mjs/+esm": "1239f5f7d34b2dc6563ef2d4f7b768e88f7b71ddb83404d6f664a21181a174af",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/solarized-light.mjs/+esm": "47ba821287a2df65d906a07ed2c7ece2411d3876b4a47299d1d8bba300f5e7bb",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/synthwave-84.mjs/+esm": "55dde4e4285bc67a74b4e4b7f4a9115bd92151c9ccde0cdb7d313a7ae564ecc0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/tokyo-night.mjs/+esm": "9e245604d0bd422425cf3dcb50585b32be9e576438500ba0e9058c2d142d5b23",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/vesper.mjs/+esm": "fc8b0f95cff48a319a924af09c1687f1169d1fb5f8a7c8e26c0fd6ed4312d709",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/vitesse-black.mjs/+esm": "76fb22156cd7cb3aff3f76649e343252bef56c1060133aba9f8bad8395568498",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/vitesse-dark.mjs/+esm": "12f1bd29855597e90e525159f74247c3ad369c9a77fce8aedaa75218b6faa2b0",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/dist/themes/vitesse-light.mjs/+esm": "f4ffbf59e4a8329689f6114f4250f5900c31057a41ce846769dbc4236646bfea",
+    "https://cdn.jsdelivr.net/npm/shiki@1.24.2/wasm/+esm": "e08f4a40a244154a715b68983959e880fb3dd8c90e82f7edc1dd1284b88ab6e9",
+    "https://cdn.jsdelivr.net/npm/space-separated-tokens@2.0.2/+esm": "b241b5d5c58744e14f3ea88f73023a4be41a0feb3bdc116dc6eb6b9bd18237be",
+    "https://cdn.jsdelivr.net/npm/stringify-entities@4.0.4/+esm": "c74760f10b22a49b7083598d11ba45e59537503803ad6a9b353d2810cc55d14f",
+    "https://cdn.jsdelivr.net/npm/zwitch@2.0.4/+esm": "0763db0d06e0be1eeb9f1f02fac94c6fd4a29b0b0bd248e7cff2a0869bd4cff3"
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:@deno/vite-plugin@1",
+      "npm:lit@^3.2.1",
+      "npm:shiki@^1.22.2",
+      "npm:vite@^6.0.3"
+    ]
+  }
+}
