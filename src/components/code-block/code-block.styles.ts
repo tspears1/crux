@@ -1,5 +1,6 @@
 import { css } from "lit";
 import componentStyles from "../../styles/component.styles.ts";
+import { imageFit } from "../../styles/mixins/media.mixins.ts";
 
 export default css`
 	${componentStyles}
@@ -20,13 +21,20 @@ export default css`
       --_surface: var(--code-block-surface, hsl(0 0% 20%));
       --_tracking: var(--code-block-letter-spacing, 0.05em);
 
+      background-color: var(--_surface);
       border: 1px solid var(--_color);
       block-size: var(--_block-size);
       overflow: scroll;
    }
 
+   .code-block--loaded {
+      .code-block__inner {
+         opacity: 1;
+      }
+   }
+
    .code-block__header {
-      align-items: start;
+      align-items: center;
       background: var(--_surface);
       border: 1px solid var(--_color);
       display: grid;
@@ -59,21 +67,28 @@ export default css`
       border-inline-end: none;
       color: var(--_color);
       display: grid;
-      gap: 0.5em;
+      font-family: var(--_font);
+      font-size: 0.625em;
+      font-weight: 700;
+      gap: 0.75em;
       grid-column: 2 / span 1;
       grid-template-columns: auto max-content;
+      letter-spacing: var(--_tracking);
+      line-height: 1;
       margin: 0;
-      padding: 0.5em;
-      place-content: center;
+      padding: 1.5em 1.25em;
+      place-items: center;
       position: relative;
+      text-transform: uppercase;
+      transition:
+         background-color 300ms ease-in-out,
+         color 300ms ease-in-out;
 
       &:hover,
       &:focus-visible {
+         background-color: var(--_color);
+         color: var(--_surface);
          cursor: pointer;
-
-         &::before {
-            scale: 1.2;
-         }
       }
    }
 
@@ -84,9 +99,15 @@ export default css`
       inline-size: 1rem;
 
       svg {
-         block-size: 100%;
-         inline-size: 100%;
-         object-fit: contain;
+         ${imageFit('contain')}
+      }
+   }
+
+   .code-block__inner {
+      transition: opacity 1500ms ease-in-out;
+
+      @starting-style {
+         opacity: 0;
       }
    }
 

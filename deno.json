@@ -10,6 +10,7 @@
   "imports": {
     "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.0",
     "lit": "npm:lit@^3.2.1",
+    "open-props": "npm:open-props@^1.7.8",
     "shiki": "npm:shiki@^1.22.2",
     "vite": "npm:vite@^6.0.3"
   }

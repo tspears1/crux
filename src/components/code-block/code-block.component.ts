@@ -28,6 +28,7 @@ type Swatch = {
  * @since 1.0.0
  *
  * @slot - The default slot for the code block.
+ *
  * @property {string} language - The language of the code block.
  * @property {string} theme - The theme of the code block.
  * @property {boolean} nobadge - Whether to hide the language badge.
@@ -54,11 +55,13 @@ export default class CodeBlock extends LitElement {
   @state()
   private accessor _copied: boolean = false;
   @state()
-  private accessor _copyDelay: number = 1000;
+  private accessor _copyDelay: number = 750;
   @state()
   private accessor _copyIcon: HTMLElement = icon(copy);
   @state()
   private accessor _copyMessage: string = "Copy";
+  @state()
+  private accessor _loaded: boolean = false;
   @state()
   private accessor _swatch: Swatch = { color: undefined, surface: undefined };
 
@@ -71,6 +74,10 @@ export default class CodeBlock extends LitElement {
   @property({ type: String })
   accessor theme = "night-owl";
 
+  /**
+   * Copies the code to the clipboard.
+   * @private
+   */
   onCopy() {
     // Copy the code to the clipboard
     navigator.clipboard.writeText(this.content.innerText);
@@ -86,8 +93,14 @@ export default class CodeBlock extends LitElement {
       this._copyIcon = icon(copy);
       this._copyMessage = "Copy";
     }, this._copyDelay);
+
+    return
   }
 
+  /**
+   * Updates the theme swatch of the code block.
+   * @private
+   */
   updateTheme() {
     const preElement = this.shadowRoot?.querySelector("pre");
     if (!preElement) return;
@@ -103,6 +116,10 @@ export default class CodeBlock extends LitElement {
     }
   }
 
+  /**
+   * Lifecycle method: first updated.
+   * @private
+   */
   async firstUpdated() {
     const slot = this.shadowRoot?.querySelector("slot");
     const slotNodes = slot?.assignedNodes({ flatten: true }) ?? [];
@@ -118,8 +135,13 @@ export default class CodeBlock extends LitElement {
     if (!this._code) return;
     this.content.innerHTML = this._code;
     this.updateTheme();
+    this._loaded = true;
   }
 
+  /**
+   * Renders the language badge.
+   * @private
+   */
   languageBadge() {
     if (this.nobadge) return;
     return html`
@@ -127,6 +149,10 @@ export default class CodeBlock extends LitElement {
     `;
   }
 
+  /**
+   * Renders the copy button.
+   * @private
+   */
   copyButton() {
     return html`
       <button
@@ -143,7 +169,7 @@ export default class CodeBlock extends LitElement {
 
   render() {
     return html`
-      <div class="code-block" part="root">
+      <div class="code-block ${classMap({ "code-block--loaded": this._loaded })}" part="root">
         <div class="code-block__header" part="header">
           ${this.languageBadge()}
           ${this.copyButton()}
